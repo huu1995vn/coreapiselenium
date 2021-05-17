@@ -7,7 +7,7 @@ using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
-
+using Microsoft.Extensions.Hosting;
 namespace DockerApi
 {
     public class Program
@@ -20,13 +20,18 @@ namespace DockerApi
         {
             string port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
             string url = String.Concat("http://0.0.0.0:", port);
-            //debugging statement in case the port didn't get passed correctly
-            Console.WriteLine($"env PORT is {port ?? ("not found")}");
+            // //debugging statement in case the port didn't get passed correctly
+            // Console.WriteLine($"env PORT is {port ?? ("not found")}");
+            //  return WebHost.CreateDefaultBuilder(args)
+            //     .ConfigureWebHostDefaults(webBuilder =>
+            //     {
+            //         webBuilder.UseStartup<Startup>().UseUrls(url);
+            //     });
             return WebHost.CreateDefaultBuilder(args)
-               .ConfigureWebHostDefaults(webBuilder =>
-               {
-                   webBuilder.UseStartup<Startup>().UseUrls(url);
-               });
+                .UseUrls(url)
+                .UseStartup<Startup>();
+
+
         }
 
     }
