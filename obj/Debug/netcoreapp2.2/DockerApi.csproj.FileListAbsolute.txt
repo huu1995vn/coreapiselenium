@@ -25,6 +25,7 @@ D:\Source\Docker\02_BDS\coreapiselenium\bin\Debug\netcoreapp2.2\DockerApi.runtim
 D:\Source\Docker\02_BDS\coreapiselenium\bin\Debug\netcoreapp2.2\DockerApi.runtimeconfig.dev.json
 D:\Source\Docker\02_BDS\coreapiselenium\bin\Debug\netcoreapp2.2\DockerApi.dll
 D:\Source\Docker\02_BDS\coreapiselenium\bin\Debug\netcoreapp2.2\DockerApi.pdb
+D:\Source\Docker\02_BDS\coreapiselenium\obj\Debug\netcoreapp2.2\DockerApi.csprojAssemblyReference.cache
 D:\Source\Docker\02_BDS\coreapiselenium\obj\Debug\netcoreapp2.2\DockerApi.csproj.CoreCompileInputs.cache
 D:\Source\Docker\02_BDS\coreapiselenium\obj\Debug\netcoreapp2.2\DockerApi.RazorAssemblyInfo.cache
 D:\Source\Docker\02_BDS\coreapiselenium\obj\Debug\netcoreapp2.2\DockerApi.RazorAssemblyInfo.cs
