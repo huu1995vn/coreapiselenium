@@ -24,7 +24,7 @@ namespace DockerApi.Core.Commons.ProcessDangTin
             lOptions.Add("--incognito"); // chạy trong trình ẩn anh
            
             chromeOptions.AddArguments(lOptions);
-            IWebDriver driver = new ChromeDriver(Environment.CurrentDirectory + @"\libs", chromeOptions);
+            IWebDriver driver = new ChromeDriver(Environment.CurrentDirectory + chromeOptions);
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
             driver.Manage().Window.Maximize();
             try
