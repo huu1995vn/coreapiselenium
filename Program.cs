@@ -18,17 +18,15 @@ namespace DockerApi
         }
         public static IWebHostBuilder CreateWebHostBuilder(string[] args)
         {
-            var port = Environment.GetEnvironmentVariable("PORT");
+            string port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
+            string url = String.Concat("http://0.0.0.0:", port);
             //debugging statement in case the port didn't get passed correctly
             Console.WriteLine($"env PORT is {port ?? ("not found")}");
-
             return WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>()
-                .UseKestrel()
-                .ConfigureKestrel((context, options) =>
-                {
-                    options.Listen(IPAddress.IPv6Any, Convert.ToInt32(port));
-                });
+               .ConfigureWebHostDefaults(webBuilder =>
+               {
+                   webBuilder.UseStartup<Startup>().UseUrls(url);
+               });
         }
 
     }
