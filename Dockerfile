@@ -5,6 +5,7 @@ COPY *.csproj ./
 RUN dotnet restore
 COPY . ./
 RUN dotnet publish -c Realase -o out
+COPY Resources/chromedriver.exe /out
 FROM mcr.microsoft.com/dotnet/core/aspnet:2.2
 WORKDIR /app
 EXPOSE 80
