@@ -8,3 +8,5 @@ docker ps
 docker stop [iddocker]
 [Push/Pull docker]
 docker [push/pull] huu1995edu/coreapiselenium
+[list file]
+docker exec -it [id] bash  -> ls

@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "36bf4a1f81c1a2043c1adaf117b6d2985f1f0b0d"
+    "signature": "c5b1383f5400f9326c9fcfff56be9a6934c82cfe"
   },
   "compilationOptions": {
     "defines": [
@@ -33,6 +33,7 @@
           "OpenQA.Selenium.Winium": "1.0.0.4",
           "Selenium.Support": "3.141.0",
           "Selenium.WebDriver": "3.141.0",
+          "Selenium.WebDriver.ChromeDriver": "90.0.4430.2400",
           "System.Drawing.Common": "5.0.2",
           "Tesseract": "4.1.1"
         },
@@ -156,6 +157,7 @@
           "lib/netstandard2.0/WebDriver.dll": {}
         }
       },
+      "Selenium.WebDriver.ChromeDriver/90.0.4430.2400": {},
       "System.Drawing.Common/5.0.2": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "5.0.1",
@@ -3451,6 +3453,13 @@
       "sha512": "sha512-wPqzXO3f79DzqauTZSzLMKiaBCN0Z2Mv7KvWP+hnV6EL88zh/pJJnFtdIR1X5wa3hsTOpF/bBJs45rz7kArsiA==",
       "path": "selenium.webdriver/3.141.0",
       "hashPath": "selenium.webdriver.3.141.0.nupkg.sha512"
+    },
+    "Selenium.WebDriver.ChromeDriver/90.0.4430.2400": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-poYw2JgVJ8obMYUSnfuucxQMrMusQiA3H2dXhw3bOaFm/bweTEAvhK8RVq+5zfjmTaj7COMYfIjhWJU0rPUabQ==",
+      "path": "selenium.webdriver.chromedriver/90.0.4430.2400",
+      "hashPath": "selenium.webdriver.chromedriver.90.0.4430.2400.nupkg.sha512"
     },
     "System.Drawing.Common/5.0.2": {
       "type": "package",
