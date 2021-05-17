@@ -43,7 +43,10 @@ namespace DockerApi
             }
 
             app.UseHttpsRedirection();
-            app.UseMvc();
+            app.UseMvc(routes => 
+            {
+                routes.MapRoute("default", "{controller=Values}/{action=Get}/{id?}");
+            });
         }
     }
 }
